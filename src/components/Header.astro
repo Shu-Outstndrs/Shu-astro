@@ -1,35 +1,33 @@
 ---
 ---
 <header>
-    <div class="font-light w-screen bg-sky-100/50 dark:bg-slate-800/50 backdrop-blur-lg h-20 flex fixed z-40">
+    <div class="font-light w-screen bg-sky-100/50 dark:bg-slate-800/50 backdrop-blur-lg h-20 w-64 md:w-72 rounded-xl flex fixed z-40">
         <div class="dark:hidden p-2 ml-2 float-left flex-none"><img class="h-16 w-16" src="./ShuHanten-maru.webp" alt="ShuMaru"></div>
         <div class="hidden dark:block p-2 ml-2 float-left flex-none"><img class="h-16 w-16" src="./Shu-maru.webp" alt="ShuMaru"></div>
-        <h1 class="text-2xl md:text-3xl font-medium pt-6 md:pt-5 ml-4 float-left">Shu</h1>
+        <h1 class="text-xl md:text-2xl font-medium pt-7 md:pt-6 ml-4 float-left">Shu/Outstndrs</h1>
+</div>
 
-        <div class="bg-sky-500 hover:bg-sky-600 font-medium h-16 w-28 float-left mt-2 ml-8 md:ml-24 rounded-lg flex-initial"><a href="https://twitter.com/shu_out" target="_blank"><p class="text-white text-sm md:text-base p-5 pl-2 pr-2 text-center">Twitter</p></a></div>
-        <div class="hidden md:block bg-slate-600 dark:bg-slate-800 hover:bg-slate-700 dark:hover:bg-slate-900 h-16 w-28 float-left mt-2 ml-4 md:ml-6 rounded-lg flex-initial"><a href="https://outstndrs.com" target="_blank"><p class="text-white text-sm md:text-base p-5 pl-2 pr-2 text-center">逸般人</p></a></div>
-        <div class="hidden md:block bg-blue-600 dark:bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-700 h-16 w-28 float-left mt-2 ml-4 md:ml-6 rounded-lg flex-initial"><a href="https://discord.gg/pGn4gsWxG5" target="_blank"><p class="text-white text-sm md:text-base p-5 pl-2 pr-2 text-center">コミュニティ</p></a></div>
-
-        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="md:hidden text-black/60 dark:text-white/50 bg-sky-100/50 hover:bg-sky-100/60 focus:ring-4 focus:outline-none 
-        focus:bg-sky-100/40 font-medium rounded-lg text-xl w-16 h-16 mt-2 ml-auto mr-4 float-right text-center items-center dark:bg-slate-800/50 dark:hover:bg-slate-800/60
-        dark:focus:bg-slate-800/70 z-40 " type="button">≡ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-        <!-- Dropdown menu -->
-        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-            <li>
-                <a href="https://outstndrs.com" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">逸般人</a>
-            </li>
-            <li>
-                <a href="https://discord.gg/pGn4gsWxG5" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">コミュニティ</a>
-            </li>
-            <li>
-                <!-- <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a> -->
-            </li>
-            <li>
-                <!-- <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a> -->
-            </li>
-            </ul>
-
-        </div>
+<div class="flex justify-between h-20 float-right z-50">
+    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black/60 dark:text-white/50 bg-sky-100/50 hover:bg-sky-100/60 focus:ring-4 focus:outline-none 
+    focus:bg-sky-100/40 font-medium rounded-lg text-xl w-16 h-16 right-0 top-0  ml-auto mt-4 mr-4  float-right text-center items-center dark:bg-slate-800/50 dark:hover:bg-slate-800/60
+    dark:focus:bg-slate-800/70 z-40 fixed" type="button">≡ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+    <!-- Dropdown menu -->
+    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+        <li>
+            <a href="https://twitter.com/shu_out" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Twitter</a>
+        </li>
+        <li>
+            <a href="https://outstndrs.com" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">逸般人</a>
+        </li>
+        <li>
+            <a href="https://discord.gg/pGn4gsWxG5" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">コミュニティ</a>
+        </li>
+        <li>
+            <!-- <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a> -->
+        </li>
+        </ul>
     </div>
+</div>
+
 </header>
