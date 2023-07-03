@@ -19,10 +19,12 @@ import Header from '../components/Header.astro'
     <meta property="og:image" content="https://shuwatanabe.vercel.app/ShuSirokuro600.webp" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@shu_out" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
 </head>
 <body class="dark:text-white text-slate-900">
-    <Header />
 
+    <Header />
+    
     <div class="font-light p-8 md:p-16 pt-20 md:pt-20 bg-slate-400/80 dark:bg-slate-900/60 backdrop-blur z-[-1] overflow-hidden">
         <div class="relative">
             <img class="hidden dark:block h-24 md:h-40 w-24 md:w-40 float-left m-4 md:m-10 object-cover object-top" src="./ShuSirokuro600.webp" alt="ShuIcon">
@@ -82,5 +84,7 @@ import Header from '../components/Header.astro'
         <div class="hidden dark:block fixed min-h-screen min-w-full inset-0 overflow-hidden z-[-1]"><img class="absolute z-[-1] min-h-screen min-w-full object-cover" src="./Night.webp" alt="bgNight"></div>
         <div class="dark:hidden fixed min-h-screen min-w-full inset-0 overflow-hidden z-[-1]"><img class="absolute z-[-1] min-h-screen min-w-full object-cover" src="./Day.webp" alt="bgDay"></div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
 </body>
 </html>
