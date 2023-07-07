@@ -1,11 +1,29 @@
 ---
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+
+const outstndrs = {
+  list: {
+    builder: {
+      member: [
+        {name: "Miyamon", age: 17, highQualityBuild() {}},
+        {name: "Soumame", age: 16, useManyTools() {}},
+      ],
+      build() {}
+    },
+    corder: {
+      member: [
+      {name: "Shu", age: 14, useMakeCode() {}}
+      ],
+      cording() {}
+    }
+  }
+}
 ---
 
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shu/Outstndrs</title>
@@ -21,12 +39,12 @@ import Footer from '../components/Footer.astro'
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@shu_out" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
-</head>
-<body class="dark:text-slate-100 text-slate-900">
-
+  </head>
+<body class="dark:text-slate-100 text-slate-900 antialiased ">
     <Header />
+
   <main>
-    <div class="font-light p-8 md:p-16 pt-20 md:pt-20 bg-slate-400/80 dark:bg-slate-900/60 backdrop-blur z-[-1] overflow-hidden float-none">
+    <div class="font-light p-8 md:p-16 pt-20 md:pt-20 bg-slate-400/80 dark:bg-slate-900/60 backdrop-blur z-[-1] overflow-hidden float-none antialiased">
         <div class="relative">
             <img class="hidden dark:block h-24 md:h-40 w-24 md:w-40 float-left m-4 md:m-10 object-cover object-top" src="./ShuSirokuro600.webp" alt="ShuIcon">
             <img class="dark:hidden h-24 md:h-40 w-24 md:w-40 float-left m-4 md:m-10 object-cover object-top" src="./ShuSirokuroHanten600.webp" alt="ShuIcon">
@@ -98,11 +116,8 @@ import Footer from '../components/Footer.astro'
             </li>
         </ol>
   </main>
-        <div class="">
-            <Footer />
-        </div>
-    </div>
-
+  <Footer />
+  
     <div>
         <div class="hidden dark:block fixed min-h-screen h-full w-full inset-0 overflow-hidden z-[-1]"><img class="z-[-1] min-h-screen w-full h-full object-cover" src="./Night.webp" alt="bgNight"></div>
         <div class="dark:hidden fixed min-h-screen h-full w-full inset-0 overflow-hidden z-[-1]"><img class="z-[-1] min-h-screen w-full h-hull object-cover" src="./Day.webp" alt="bgDay"></div>
